@@ -1,32 +1,34 @@
 create environment
 
-'''bash
+```bash
 conda create -n wineqal python=3.7 -y
-'''
+```
 
 activate environment
-'''bash
+```bash
 conda activate wineqal
-'''
+```
 
 create a requirements file and install the req
-'''bash
+```bash
 pip install requirements.txt
-'''
+```
 
-'''bash
+```bash
 git init
-'''
-'''bash
-dvc init
-'''
+```
 
-'''bash
+```bash
+dvc init
+```
+
+dvc add will track the data file 
+```bash
 dvc add data_given/winequality.csv
-'''
+```
 
 Pushing it to github
-'''bash
+```bash
 git add . && git commit -m 'first commit'
 
 git remote add origin url
@@ -34,4 +36,4 @@ git remote add origin url
 git branch -M main
 
 git push origin main
-'''
+```
