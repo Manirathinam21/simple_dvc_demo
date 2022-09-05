@@ -14,7 +14,7 @@ def load_and_save(config_path):
     raw_data_path=config["load_data"]["raw_dataset_csv"]
     df.to_csv(raw_data_path, sep=',', index=False, header=new_cols)
  
- 
+
 if __name__=="__main__":
     args=argparse.ArgumentParser() 
     args.add_argument("--config", default="params.yaml")
