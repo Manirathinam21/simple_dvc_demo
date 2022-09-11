@@ -37,3 +37,17 @@ git branch -M main
 
 git push origin main
 ```
+
+comment to commit dvc stages
+
+```bash
+dvc repro
+```
+
+dvc cooment to view parmas and scores, also diff
+
+```bash
+dvc metrics show
+
+dvc metrics diff
+```
