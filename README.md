@@ -36,18 +36,20 @@ git remote add origin url
 git branch -M main
 
 git push origin main
+
+git push origin main -f
 ```
 
-comment to commit dvc stages
+comment to commit dvc stages, it will commit a new stages & leave already commited stages
 
 ```bash
 dvc repro
 ```
 
-dvc cooment to view parmas and scores, also diff
+dvc comments to view parmas and scores, also show diff 
 
 ```bash
 dvc metrics show
 
 dvc metrics diff
-```git config --global --unset http.proxy
+```
