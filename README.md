@@ -50,4 +50,4 @@ dvc cooment to view parmas and scores, also diff
 dvc metrics show
 
 dvc metrics diff
-```
+```git config --global --unset http.proxy
