@@ -53,3 +53,29 @@ dvc metrics show
 
 dvc metrics diff
 ```
+
+tox command -
+```bash
+tox
+```
+
+for rebulding tox -
+```bash
+tox -r
+```
+
+pytest command
+```bash
+pytest -v
+```
+
+setup commands - for local package install
+```bash
+pip install -e .
+```
+
+build your own package commands-
+```bash
+python setup.py sdist bdist_wheel
+```
+
