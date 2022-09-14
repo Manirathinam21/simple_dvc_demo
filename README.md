@@ -79,3 +79,7 @@ build your own package commands-
 python setup.py sdist bdist_wheel
 ```
 
+to create a new folders
+```bash
+mkdir -p .github/workflows/
+```
