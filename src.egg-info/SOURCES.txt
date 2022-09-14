@@ -25,6 +25,8 @@ notebooks/Untitled.ipynb
 notebooks/schema_in.json
 notebooks/.ipynb_checkpoints/Untitled-checkpoint.ipynb
 notebooks/.ipynb_checkpoints/schema_in-checkpoint.json
+prediction_service/__init__.py
+prediction_service/prediction.py
 report/params.json
 report/scores.json
 saved_model/.gitignore
