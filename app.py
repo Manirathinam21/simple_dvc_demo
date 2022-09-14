@@ -27,7 +27,15 @@ def predict(data):
     return prediction[0]
 
 def api_response(request):
-    pass
+    try:
+        data= np.array([list(request.json.values())])
+        response= prediction(data)
+        response= {"response": response}
+        return response
+    except Exception as e:
+        print(e) 
+        error= {"error": "something went wrong!! Try again"}       
+        return error
 
 @app.route("/", methods=["GET", "POST"])
 def index():
