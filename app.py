@@ -22,14 +22,14 @@ def predict(data):
     config= read_params(params_path)
     model_dir_path= config["webapp_model_dir"]
     model= joblib.load(model_dir_path)
-    prediction= model.prediction(data)
+    prediction= model.predict(data)
     print(prediction)
     return prediction[0]
 
 def api_response(request):
     try:
         data= np.array([list(request.json.values())])
-        response= prediction(data)
+        response= predict(data)
         response= {"response": response}
         return response
     except Exception as e:
