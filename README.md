@@ -83,3 +83,14 @@ to create a new folders
 ```bash
 mkdir -p .github/workflows/
 ```
+
+create an artifact folders
+
+mkdir artifacts
+
+mlflow server command -
+
+mlflow server \
+    --backend-store-uri sqlite:///mlflow.db \
+    --default-artifact-root ./artifacts \
+    --host 0.0.0.0 -p 1234
