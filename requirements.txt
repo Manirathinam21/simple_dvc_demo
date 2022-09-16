@@ -7,3 +7,7 @@ tox
 flake8
 flask
 gunicorn
+joblib
+numpy
+Jinja2
+MarkupSafe
